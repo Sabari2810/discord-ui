@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="h-screen">
       <Head>
-        <title>Create Next App</title>
+        <title>Discord</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <HeaderBanner />
