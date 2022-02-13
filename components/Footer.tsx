@@ -76,7 +76,7 @@ const Footer = () => {
               </a>
             </div>
             <div className="flex flex-col items-start justify-between space-y-2">
-              <p className="text-blue-800">Policies</p>
+              <p className="text-blue-600">Policies</p>
               <a className="text-white hover:underline" href="">
                 Terms
               </a>
@@ -103,7 +103,7 @@ const Footer = () => {
         </div>
         <hr className="border-[0.5] border-blue-600" />
         <div className="flex w-full items-center justify-between">
-          <div>
+          <div className="cursor-pointer">
             <svg
               width="124"
               height="34"
