@@ -6,10 +6,11 @@ import HeaderBanner from '../components/HeaderBanner/HeaderBanner'
 import InviteOnlyImage from '../assets/invite-only.svg'
 import JustChilling from '../components/JustChilling/JustChilling'
 import Footer from '../components/Footer'
+import Drawer from '../components/Drawer'
 
 export default function Home() {
   return (
-    <div className="h-screen">
+    <div className="h-screen overflow-x-hidden">
       <Head>
         <title>Discord</title>
         <link rel="icon" href="/favicon.ico" />
@@ -38,6 +39,7 @@ export default function Home() {
       />
       <JustChilling />
       <Footer />
+      <Drawer />
     </div>
   )
 }

@@ -5,8 +5,11 @@ import RightBg from './RightBg'
 
 import { AiOutlineMenu, AiOutlineMenuFold } from 'react-icons/ai'
 import { FaBars } from 'react-icons/fa'
+import { useDispatch } from 'react-redux'
+import { toggleDrawer } from '../../slices/DrawerSlice'
 
 const HeaderBanner = () => {
+  const dispatch = useDispatch()
   return (
     <div className="flex w-full flex-col items-start bg-blue-700 px-10 lg:px-0">
       {/* header */}
@@ -52,7 +55,12 @@ const HeaderBanner = () => {
           >
             Login
           </button>
-          <FaBars className="h-12 w-6 cursor-pointer text-white lg:hidden" />
+          <FaBars
+            onClick={() => {
+              dispatch(toggleDrawer(true))
+            }}
+            className="h-12 w-6 cursor-pointer text-white lg:hidden"
+          />
         </div>
       </div>
       {/* description */}
