@@ -10,8 +10,8 @@ const Drawer = () => {
     <div
       className={`fixed ${
         isDrawerOpen ? 'translate-x-0' : 'translate-x-full'
-      } top-0 right-0 z-[9998] flex h-screen flex-col
-     justify-between rounded-l-xl bg-white p-6 duration-500`}
+      } top-0 right-0 z-[9998] flex flex h-screen
+     flex-col justify-between rounded-l-xl bg-white p-6 duration-500 md:hidden`}
     >
       <div>
         <div className="flex items-start justify-between">
