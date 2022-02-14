@@ -11,7 +11,10 @@ import { toggleDrawer } from '../../slices/DrawerSlice'
 const HeaderBanner = () => {
   const dispatch = useDispatch()
   return (
-    <div className="flex w-full flex-col items-start bg-blue-700 px-7 md:px-10 lg:px-0">
+    <div
+      className="flex w-full flex-col items-start bg-blue-700 px-7
+     md:px-10 lg:px-0"
+    >
       {/* header */}
       <div
         className="
@@ -102,9 +105,9 @@ const HeaderBanner = () => {
             Download for Windows
           </button>
           <button
-            className="w-full 
+            className=" 
                     rounded-3xl bg-slate-900 
-                   py-3 px-6 text-left text-xl text-white
+                   py-3 px-6 text-xl text-white
                     shadow
                      shadow-slate-600 transition-all duration-200 
                      hover:bg-slate-800
