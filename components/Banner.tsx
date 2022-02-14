@@ -24,7 +24,11 @@ const Banner = ({
         className="mx-auto flex max-w-6xl flex-col items-start justify-between py-28 
       px-9 md:flex-row md:items-center"
       >
-        <div className={`w-[30rem] lg:h-[27rem] lg:w-[40rem] order-${order}`}>
+        <div
+          className={` w-full lg:h-[27rem] ${
+            order == 0 ? 'md:order-none' : 'md:order-1'
+          } `}
+        >
           <BannerImage />
         </div>
         <div className="flex flex-col items-start space-y-7 pt-7 md:max-w-xs md:pt-0">

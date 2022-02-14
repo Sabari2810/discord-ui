@@ -13,7 +13,7 @@ const HeaderBanner = () => {
       <div
         className="
             z-[9998] 
-            mx-auto flex w-full max-w-6xl justify-between pt-10"
+            mx-auto flex w-full max-w-6xl items-center justify-between pt-10"
       >
         <div className="cursor-pointer">
           <svg
